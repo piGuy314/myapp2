@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+
+// Typography Styles//
+h1,h2,h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  background: gray;
+}
+
+
+// Nav Styles //
+.navbar {
+    border:none;
+}
+
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav li a {
+    color:black;
+    &:hover{
+        color:white;
+        opacity:0.75;
+    }
+}
+
+
+//Homepage styles//
+.home-callout{
+  margin-top:-20px;
+  padding-top:50px;
+  padding-bottom:100px;
+  size: both;
+  overflow: auto;
+}
+
+.me{
+  width:175px;
+  height:175px;
+  border-color:black;
+  border-width:5px;
+  border-style:solid;
+  border-radius:200px;
+  left:900px;
+  top:250px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - pushes content to the left only if embedded in the h and p tags of the main id */
+#main {
+    transition: margin-left .5s;
+    padding: 5px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
