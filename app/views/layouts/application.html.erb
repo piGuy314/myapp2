@@ -36,7 +36,7 @@
   </nav>
   <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
+  <a href="posts">home</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
   <a href="#">Contact</a>
@@ -55,20 +55,12 @@
       <%= content_tag :div, msg, class: "alert alert-#{type}" %>
     <% end %>
 
-    <div class="container">
-      <div id="main ">
-        <div class="col-md-10 col-md-offset-2">
-          <h1 class="text-center">Welcome to my site!</h1>
-          <h3 class="text-center">I've created this site as a portfolio page to display my accomplishemnets in front and back end web design.</h3>
-
-          <img class= me  src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/15319097_10211166392421461_2269551270510495837_n.jpg?oh=a4f28fa48a8581d11800470e75233bb2&oe=597F4FD2" >
 
 
-          <%= yield %>
-      </div>
-      </div>
+
+
+    <%= yield %>
     </div>
   </div>
-</div>
 </body>
 </html>

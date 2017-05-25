@@ -53,22 +53,24 @@ h1,h2,h3 {
 
 
 //Homepage styles//
-.home-callout{
-  margin-top:-20px;
-  padding-top:50px;
-  padding-bottom:100px;
+.page-header{
+  padding-bottom:0px;
+  padding-top: 0px;
+  top:50px;
   size: both;
-  overflow: auto;
+
 }
 
-.me{
+
+
+.me {
   width:175px;
   height:175px;
   border-color:black;
   border-width:5px;
   border-style:solid;
   border-radius:200px;
-  left:900px;
+  right:100px;
   top:250px;
 }
 

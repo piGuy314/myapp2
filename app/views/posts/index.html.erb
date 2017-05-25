@@ -1,8 +1,23 @@
+
+<!--Need to work on positioning of self image
+  <img class= me  src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/15319097_10211166392421461_2269551270510495837_n.jpg?oh=a4f28fa48a8581d11800470e75233bb2&oe=597F4FD2" >
+-->
+
+
+
+
+<header class="jumbotron page-header">
+
+  <h1 class="text-center">Welcome to my site!</h1>
+  <h3 class="text-center">I've created this site as a portfolio page to display my accomplishemnets in front and back end web design.</h3>
+
+</header>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -16,9 +31,9 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', post, class: 'btn btn-info' %></td>
+        <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-warning' %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +41,6 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Post', new_post_path, class: 'btn btn-primary' %>
+
+</header>
