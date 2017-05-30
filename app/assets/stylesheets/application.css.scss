@@ -55,6 +55,27 @@ h1,h2,h3 {
     }
 }
 
+.linkedin {
+  position:absolute;
+  font-size:20px;
+  width:200px;
+  height:40px;
+  color:skyblue;
+  background-color:black;
+  left: 460px;
+  top:60px;
+}
+
+.github {
+  position:absolute;
+  font-size:20px;
+  width:200px;
+  height:40px;
+  color:skyblue;
+  background-color:black;
+  left: 360px;
+  top:60px;
+}
 
 //Homepage styles//
 .page-header{
