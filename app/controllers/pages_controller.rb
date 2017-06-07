@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def devmatch
   end
 
+  def javascript
+  end
+
 end

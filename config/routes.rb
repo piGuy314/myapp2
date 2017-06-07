@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :contacts
   get 'contact-us', to: 'contacts#new'
   get 'devmatch', to: 'pages#devmatch'
+  get 'javascript', to: 'pages#javascript'
 end

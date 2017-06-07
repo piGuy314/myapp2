@@ -1,0 +1,124 @@
+
+
+<html>
+<body id=body>
+
+  <h1 class='text-center'>Here are coding examples of my experience in Javascript!</h1>
+
+<div class="container">
+  <!--
+    <img id=bourbon style= width:900px;  src="http://blogs-images.forbes.com/karlaalindahao/files/2015/02/pappy_crop-1152x648.jpg">
+  -->
+
+  <h3 class='text-center'>Random number generator for Megaball and Powerball</h3>
+  <div class='container'>
+    <div class'col-md-6'>
+      <div class='well'>
+      <h3>
+            function myFunctionMega(){    <br>
+                        var x = Math.floor((Math.random() *15) +1);   <br>
+                        document.getElementById("mega").innerHTML =x;   <br>
+                      }   <br><br>
+
+           function myFunctionPower(){    <br>
+                        var y = Math.floor((Math.random() *25) +1);   <br>
+                        document.getElementById("power").innerHTML =y;    <br>
+
+                      }
+
+        <br>
+        <br>
+    <div id = textMega>
+      <p1 id=MB>Click the button to display a random number between 1 and 15.</p1>
+
+      <div id = buttonMega>
+        <button id=MBB onclick="myFunctionMega ();">&nbsp; Mega Ball</button>
+      </div>
+  <div id =  outputMega>
+    <p2 id="mega"></p2>
+  </div>
+  <br>
+  <br>
+  <div id=textPower>
+  <p3 id=PB>Click the button to display a random number between 1 and 25.</p3>
+  </div>
+  <div id=buttonPower>
+  <button id=PBB onclick="myFunctionPower ()">Power Ball</button>
+  </div>
+
+  <div id=outputPower>
+  <p4 id="power"></p4>
+  </div>
+  </div>
+
+<script type="text/javascript">
+      function myFunctionMega(){
+                  var x = Math.floor((Math.random() *15) +1);
+                  document.getElementById("mega").innerHTML =x;
+                }
+
+     function myFunctionPower(){
+                  var y = Math.floor((Math.random() *25) +1);
+                  document.getElementById("power").innerHTML =y;
+
+                }
+</script>
+  </h3>
+</div>
+    </div>
+  </div>
+</div>
+<h3 class='text-center'>Random band quote generator</h3>
+<div class='container'>
+  <div class'col-md-6'>
+    <div class='well'>
+      <h2>language="javascript"> <br>
+function quotes(){<br>
+<br>
+var aquote = new Array;<br>
+aquote[0]="\"Out of student loans and tree house homes we all would take the latter.\"";<br>
+aquote[1]="\"But tonight, I’ll need you to stay.\"";<br>
+aquote[2]="\" But it’s fun to fantasize.\""<br>
+  aquote[3]="\"My name’s Blurryface, and I, care what you think.\""<br>
+  aquote[4]="\" Sometimes you gotta bleed to know that you’re alive and have a soul.\""<br>
+  aquote[5]="\"I know a thing or two about pain and darkness.\""<br>
+  aquote[6]="\"Don’t forget about me. \""<br>
+  aquote[7]="\"I just wanna know what’s on your mind.\""<br>
+  aquote[8]="\"Death inspires me like a dog inspires a rabbit.\""<br>
+  aquote[9]="\"I’m only at it again as an addict with a pen.\""<br>
+<br>
+rdmQuote = Math.floor(Math.random()*aquote.length);<br>
+document.getElementById("txtbox") .value=aquote[rdmQuote];<br>
+}<br>
+</h2>
+
+      <h2 class=title><button class=button onClick="quotes()">click me for awesome quotes!</button><img>
+        <textarea id="txtbox" style="width:600px;" ></textarea></h2>
+
+<script
+language="javascript">
+function quotes(){
+
+var aquote = new Array;
+aquote[0]="\"Out of student loans and tree house homes we all would take the latter.\"";
+aquote[1]="\"But tonight, I’ll need you to stay.\"";
+aquote[2]="\" But it’s fun to fantasize.\""
+  aquote[3]="\"My name’s Blurryface, and I, care what you think.\""
+  aquote[4]="\" Sometimes you gotta bleed to know that you’re alive and have a soul.\""
+  aquote[5]="\"I know a thing or two about pain and darkness.\""
+  aquote[6]="\"Don’t forget about me. \""
+  aquote[7]="\"I just wanna know what’s on your mind.\""
+  aquote[8]="\"Death inspires me like a dog inspires a rabbit.\""
+  aquote[9]="\"I’m only at it again as an addict with a pen.\""
+
+rdmQuote = Math.floor(Math.random()*aquote.length);
+document.getElementById("txtbox") .value=aquote[rdmQuote];
+}
+</script>
+</h3>
+</div>
+  </div>
+</div>
+</div>
+</body>
+                    </html>
