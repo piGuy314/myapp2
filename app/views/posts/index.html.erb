@@ -31,8 +31,14 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
+        <div class="post_wrapper">
+          <h1 class="title"><%= link_to post.title, post %></h1>
+          <h3 class="body"><%= link_to post.body, post %></h3>
+          <h3 class="date"><%= post.created_at.strftime("%B, %d, %Y") %></h3>
+        <!-- Adding date with different HTML / Ruby above
         <td><%= post.title %></td><br><br>
         <td><%= post.body %></td><br><br><br>
+        -->
         <td><%= link_to 'View', post, class: 'btn ' %></td>
         <td><%= link_to 'Edit', edit_post_path(post), class: 'btn ' %></td>
         <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn ' %></td>
@@ -42,4 +48,3 @@
 </div>
 </div>
 </header>
-end

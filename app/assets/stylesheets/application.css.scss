@@ -23,8 +23,13 @@
 
 
 // Typography Styles//
-h1,h2,h3 {
+h1 {
     font-family: 'Open Sans', sans-serif;
+}
+
+h2,h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
 }
 
 .newPost {
