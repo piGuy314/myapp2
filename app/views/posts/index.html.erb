@@ -2,16 +2,38 @@
 <!--Need to work on positioning of self image
   <img class= me  src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/15319097_10211166392421461_2269551270510495837_n.jpg?oh=a4f28fa48a8581d11800470e75233bb2&oe=597F4FD2" >
 -->
-<div class="col-md-10 col-md-offset-1">
+<br>
+<br>
+<br>
+<div id="sidebar">
+  <div id="logo">
+    <%= link_to root_path do %>
+    <%= image_tag "" %>
+    <% end %>
+  </div>
+  <ul>
+    <li class="category">Website</li>
+    <li><%= link_to "Blog", root_path %></li>
+    <li>Links</li>
+  </ul>
+
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</div>
+<div class="col-md-9 col-sm-offset-1">
 <header class="jumbotron page-header">
   <h1 class="text-center">Welcome to my site!</h1>
   <h3 class="text-center">I've created this site as a portfolio and refernce page to display my learnings in front and back end web development.</h3>
+
+
 
 </header>
 </div>
 <p id="notice"><%= notice %></p>
 
-<div class= "col-md-10 col-md-offset-1">
+<div class= "col-md-9 col-md-offset-1">
 
 <%= link_to 'New Post', new_post_path, class: 'newPost btn btn-success' %>
 <br>
@@ -35,10 +57,12 @@
           <h1 class="title"><%= link_to post.title, post %></h1>
           <h3 class="body"><%= link_to post.body, post %></h3>
           <h3 class="date"><%= post.created_at.strftime("%B, %d, %Y") %></h3>
-        <!-- Adding date with different HTML / Ruby above
+
+        <!-- removed: used titel, body and date with different HTML / Ruby above
         <td><%= post.title %></td><br><br>
         <td><%= post.body %></td><br><br><br>
         -->
+
         <td><%= link_to 'View', post, class: 'btn ' %></td>
         <td><%= link_to 'Edit', edit_post_path(post), class: 'btn ' %></td>
         <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn ' %></td>
