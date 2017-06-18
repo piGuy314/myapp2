@@ -15,13 +15,13 @@
 //= require_tree .
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginright = "250px";
+    document.getElementById("myRightnav").style.width = "250px";
+    document.getElementById("main").style.marginleft = "0px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginright= "0";
+    document.getElementById("myRightnav").style.width = "0";
+    document.getElementById("main").style.marginleft= "250px";
     document.body.style.backgroundColor = "white";
 }

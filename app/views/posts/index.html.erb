@@ -1,11 +1,9 @@
 
 <!--Need to work on positioning of self image
   <img class= me  src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/15319097_10211166392421461_2269551270510495837_n.jpg?oh=a4f28fa48a8581d11800470e75233bb2&oe=597F4FD2" >
--->
-<br>
-<br>
-<br>
-<div id="sidebar">
+
+
+<div id="leftbar">
   <div id="logo">
     <%= link_to root_path do %>
     <%= image_tag "" %>
@@ -22,7 +20,8 @@
     <li></li>
     <li></li>
 </div>
-<div class="col-md-9 col-sm-offset-1">
+-->
+<div class="col-md-8 col-sm-offset-2">
 <header class="jumbotron page-header">
   <h1 class="text-center">Welcome to my site!</h1>
   <h3 class="text-center">I've created this site as a portfolio and refernce page to display my learnings in front and back end web development.</h3>
@@ -33,7 +32,7 @@
 </div>
 <p id="notice"><%= notice %></p>
 
-<div class= "col-md-9 col-md-offset-1">
+<div class= "col-md-8 col-sm-offset-2">
 
 <%= link_to 'New Post', new_post_path, class: 'newPost btn btn-success' %>
 <br>
@@ -41,7 +40,7 @@
 <!-- commenting out for now
 <h1 class="text-center">Posts</h1>
 -->
-<div class="well">
+<div class="">
   <thead>
     <tr>
       <th></th>

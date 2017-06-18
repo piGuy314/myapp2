@@ -29,11 +29,26 @@
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "About", about_path %></li>
           <li><%= link_to "Contact Aaron", contact_us_path %></li>
+          <li>
+          <%= link_to "https://github.com/piGuy314", target: :_blank  do %>
+          <i class="fa fa-github fa-2x"></i>
+          <% end %>
+        </li>
+        <li>
+        <%= link_to "https://www.linkedin.com/in/aaron-eichhorst-3a348862/", target: :_blank  do %>
+        <i class="fa fa-linkedin-square fa-2x"></i>
+        <% end %>
+      </li>
+      <li>
+      <%= link_to "https://www.facebook.com/aaron.eichhorst.7?ref=bookmarks", target: :_blank  do %>
+      <i class="fa fa-facebook-official fa-2x"></i>
+      <% end %>
+    </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
   </nav>
-  <div id="mySidenav" class="sidenav" style="text-align:left">
+  <div id="myRightnav" class="rightnav" style="text-align:left">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="posts">home</a>
   <a href="devmatch">Dev Match</a>
@@ -46,20 +61,58 @@
 </div>
 <div id="main" class="col-md-12" style=text-align:right>
   <span style="font-size:30px ; cursor:pointer" onclick="openNav()">Skillz &#9776;</span>
-
 </div>
+
 <!-- Success / error message for contact form -->
   <div class = "container">
     <% flash.each do |type, msg| %>
       <%= content_tag :div, msg, class: "alert alert-#{type}" %>
     <% end %>
-
-
-
-
-
     <%= yield %>
     </div>
   </div>
+
+<footer class="text-center">
+  <nav class ="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class= "container text-center">
+    <div class ="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle= "collapse" data-target="#main-nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class ="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <div class="nav navbar-nav navbar-center">
+      </div>
+      <ul class="nav navbar-nav navbar text-center">
+        <!--
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact Aaron", contact_us_path %></li>
+        -->
+      <li>
+        <%= link_to "https://github.com/piGuy314", target: :_blank  do %>
+        <i class="fa fa-github fa-2x"></i>
+        <% end %>
+      </li>
+      <li>
+      <%= link_to "https://www.linkedin.com/in/aaron-eichhorst-3a348862/", target: :_blank  do %>
+      <i class="fa fa-linkedin-square fa-2x"></i>
+      <% end %>
+    </li>
+    <li>
+    <%= link_to "https://www.facebook.com/aaron.eichhorst.7?ref=bookmarks", target: :_blank  do %>
+    <i class="fa fa-facebook-official fa-2x"></i>
+    <% end %>
+  </li>
+  <!--
+      <li><h3>Aaron Eichhorst 2017. All Rights Reserved.</h3></li>
+    -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+  </nav>
+</footer>
 </body>
 </html>
