@@ -32,12 +32,17 @@ h2,h3 {
     font-size:14px;
 }
 
+p1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:22px;
+}
+
 .newPost {
   position: relative;
 }
 
 .navbar {
-  background: gray;
+  background: lightgray;
 }
 
 
@@ -143,7 +148,7 @@ h2,h3 {
   height: 100%;
   background:white;
   padding:7em 0 0 0;
-  border-right: 1px solid #d6dce0;
+
 
 }
 

@@ -1,33 +1,39 @@
 
 <!--Need to work on positioning of self image
   <img class= me  src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/15319097_10211166392421461_2269551270510495837_n.jpg?oh=a4f28fa48a8581d11800470e75233bb2&oe=597F4FD2" >
-
+-->
 
 <div id="leftbar">
   <div id="logo">
     <%= link_to root_path do %>
     <%= image_tag "" %>
     <% end %>
-  </div>
+</div>
   <ul>
-    <li class="category">Website</li>
-    <li><%= link_to "Blog", root_path %></li>
-    <li>Links</li>
+    <h4>Video of the week:</h4>
+
+    <iframe width="186" height="110" src="https://www.youtube.com/embed/Y2VF8tmLFHw" frameborder="0" allowfullscreen></iframe>
   </ul>
 
+
+    <br>
+    <br>
+    <br>
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+    <h4>past videos:</h4>
+      <iframe width="186" height="110" src="https://www.youtube.com/embed/ZkRu9gPr4sU" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <iframe width="186" height="110" src="https://www.youtube.com/embed/BI_VnnOLSKY" frameborder="0" allowfullscreen></iframe>
+  </ul>
+
 </div>
--->
+
 <div class="col-md-8 col-sm-offset-2">
 <header class="jumbotron page-header">
   <h1 class="text-center">Welcome to my site!</h1>
-  <h3 class="text-center">I've created this site as a portfolio and refernce page to display my learnings in front and back end web development.</h3>
-
-
-
+  <h3 class="text-center">I've created this site as a portfolio and refernce
+    page to display my learnings in front and back end web development.</h3>
 </header>
 </div>
 <p id="notice"><%= notice %></p>
