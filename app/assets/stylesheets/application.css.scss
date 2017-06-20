@@ -32,7 +32,7 @@ h2,h3 {
     font-size:14px;
 }
 
-p1 {
+h4 {
   font-family: 'Open Sans', sans-serif;
   font-size:22px;
 }
@@ -65,15 +65,31 @@ p1 {
     }
 }
 
-
+.navbar-nav {
+  text-align:center;
+  float:none;
+}
+  .navbar-nav li {
+      display:inline-block;
+      float:none;
+  }
+/*
+  #footer{
+   background-color: lightgray;
+   padding-top: 10px;
+   padding-bottom: 0px;
+   position:fixed;
+   bottom:0px;
+   width:100%;
+}
+*/
 
 //Homepage styles//
 .page-header{
   padding-bottom:0px;
   padding-top: 0px;
-  top:50px;
+  top:500px;
   size: both;
-
 }
 
 
@@ -202,12 +218,3 @@ p1 {
   color:white;
 }
 */
-
-.navbar-nav {
-  text-align:center;
-  float:none;
-}
-  .navbar-nav li {
-      display:inline-block;
-      float:none;
-  }
