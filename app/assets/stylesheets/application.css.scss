@@ -156,16 +156,16 @@ h4 {
 }
 
 #leftbar {
-  width:225px;
-  position:absolute;
+  width:235px;
+  height:625px;
+  position:fixed;
   font-size: 22px;
   left:0;
   top:0;
-  height: 100%;
   background:white;
   padding:7em 0 0 0;
-
-
+  overflow:hidden;
+  overflow-y:scroll;
 }
 
 /*
