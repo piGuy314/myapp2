@@ -147,6 +147,7 @@ h4 {
 #main {
     transition: margin-left .5s;
     padding: 5px;
+    position:absolute;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -155,7 +156,7 @@ h4 {
     .sidenav a {font-size: 18px;}
 }
 
-#leftbar {
+.leftbar {
   width:235px;
   height:625px;
   position:fixed;
