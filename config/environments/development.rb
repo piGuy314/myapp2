@@ -52,3 +52,8 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
+
+YourApplicationName::Application.configure do
+   config.active_support.deprecation = :log
+   config.cache_classes = false
+end
