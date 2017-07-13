@@ -96,6 +96,6 @@ config.action_mailer.delivery_method = :smtp
     :address        => ENV['MAILGUN_SMTP_SERVER'],
     :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
     :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'mydomain.herokuapp.com', #mydomain actually contains the realvalue
+    :domain         => 'aaroneichhorst.herokuapp.com', #mydomain actually contains the realvalue
     :authentication => :plain,
   }
