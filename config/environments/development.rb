@@ -7,7 +7,7 @@ Rails.application.configure do
   config.cache_classes = false
 
   config.assets.initialize_on_precompile = false
-  
+
   # Do not eager load code on boot.
   config.eager_load = false
 
