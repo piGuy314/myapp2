@@ -14,9 +14,10 @@
 //= require turbolinks
 //= require_tree .
 
+
 function openNav() {
-    document.getElementById("myRightnav").style.width = "250px";
-    document.getElementById("main").style.marginleft = "0px";
+    document.getElementById("myRightnav").style.width = "100%";
+    document.getElementById("main").style.marginTop = "0px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 

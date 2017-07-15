@@ -105,21 +105,24 @@ h4 {
   top:250px;
 }
 
+
 /* The side navigation menu */
+
 .rightnav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: absolute; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
+    height: 250px; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+ position: absolute; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
     right: 0;
     background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* The navigation menu links */
+/*The navigation menu links */
+
 .rightnav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -130,27 +133,32 @@ h4 {
 }
 
 /* When you mouse over the navigation links, change their color */
+
 .rightnav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
+
 .rightnav .closebtn {
     position: absolute;
     top: 35px;
-    left: 125px;
+    left: 0px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 /* Style page content - pushes content to the right only if embedded in the h and p tags of the main id */
+
 #main {
     transition: margin-left .5s;
     padding: 5px;
     position:absolute;
+    left:0px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -162,7 +170,7 @@ h4 {
   position:fixed;
   font-size: 22px;
   left:0;
-  top:0;
+  top:50px;
   background:white;
   padding:7em 0 0 0;
   overflow:hidden;

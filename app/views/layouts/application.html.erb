@@ -10,8 +10,6 @@
 <body>
 
 
-
-
     <nav class ="navbar navbar-default navbar-static-top" role="navigation">
         <div class= "container">
       <div class ="navbar-header">
@@ -21,6 +19,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <!--Hamburger Menu -->
+        <div id="main" class="col-sm-1" style=text-align:center>
+          <span style="font-size:30px ; cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
       <%= link_to root_path, class: "navbar-brand" do %>
           Aaron Eichhorst
           <% end %>
@@ -48,21 +51,23 @@
       <% end %>
     </li>
         </ul>
+
       </div><!-- /.navbar-collapse -->
-    </div>
+      </div>
   </nav>
 
-<div id="myRightnav" class="rightnav" style="text-align:right">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="posts">home</a>
-  <a href="devmatch">Dev Match</a>
-  <a href="javascript">JavaScript</a>
 
-</div>
+<!--Hamburger Nav data -->
+  <div id="myRightnav" class="rightnav" style="text-align:right">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="posts">home</a>
+    <a href="devmatch">Dev Match</a>
+    <a href="javascript">JavaScript</a>
+    <a href="javascript">Videos</a>
 
-<div id="main" class="col-md-12" style=text-align:right>
-  <span style="font-size:30px ; cursor:pointer" onclick="openNav()">Skills &#9776;</span>
-</div>
+
+  </div>
+
 
 <!-- Success / error message for contact form -->
   <div class = "container">
