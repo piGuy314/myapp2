@@ -20,7 +20,7 @@
           <span class="icon-bar"></span>
         </button>
         <!--Hamburger Menu -->
-        <div id="main" class="col-sm-1" style=text-align:center>
+        <div id="main" class="col-sm-1" style=text-align:left>
           <span style="font-size:30px ; cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
 
@@ -58,15 +58,33 @@
 
 
 <!--Hamburger Nav data -->
-  <div id="myRightnav" class="rightnav" style="text-align:right">
+<div id="myRightnav" class="rightnav" >
+  <div class="container">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="posts">home</a>
-    <a href="devmatch">Dev Match</a>
-    <a href="javascript">JavaScript</a><a href="javascript">Videos</a>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="posts">home</a>
+        <a href="about">About</a>
+        <a href="devmatch">Dev Match</a>
+        <a href="javascript">Free Sites</a>
+      </div>
 
-
-
+      <div class="col-md-4">
+        <a href="devmatch">Ruby</a>
+        <a href="javascript">JavaScript</a>
+        <a href="posts">Java</a>
+        <a href="javascript">HTML / CSS</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#">YouTube Videos</a>
+        <a href="#">Content Comming Soon</a>
+        <a href="#">Content Comming Soon</a>
+        <a href="#">Content Comming Soon</a>
+      </div>
+    </div>
   </div>
+</div>
+
 
 
 <!-- Success / error message for contact form -->

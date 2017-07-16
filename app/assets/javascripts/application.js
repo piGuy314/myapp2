@@ -23,6 +23,6 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("myRightnav").style.width = "0";
-    document.getElementById("main").style.marginleft= "250px";
+    document.getElementById("main").style.marginleft= "300px";
     document.body.style.backgroundColor = "white";
 }
