@@ -5,16 +5,17 @@
 
 
 <body class="body">
-<div class="col-md-8 col-sm-offset-2">
-<header class="jumbotron page-header">
-  <h1 class="text-center">Welcome to my site!</h1>
-  <h3 class="text-center">I've created this site as a portfolio and refernce
-    page to display my learnings in front and back end web development.</h3>
+<div class="row">
+<div class="col-md-3">
+  <h1 class="text-center"></h1>
+    <img class= me  src="https://scontent.xx.fbcdn.net/v/t1.0-9/12933079_10208988999588001_9103491097499394503_n.jpg?oh=72b915a1638d4cd6cbf72ff5e953fff8&oe=5A035815" >
+    <h5>I'm Aaron Eichhorst, a software developer in the Chicago land area. <a href="about" style=color:skyblue>More about me.</a></h5>
+
 </header>
 </div>
 <p id="notice"><%= notice %></p>
 
-<div class= "col-md-8 col-sm-offset-2">
+<div class= "col-md-8">
 
 <%= link_to 'New Post', new_post_path, class: 'newPost btn btn-success' %>
 <br>
@@ -51,6 +52,7 @@
     <% end %>
 
   </tbody>
+</div>
 </div>
 </div>
 </body>

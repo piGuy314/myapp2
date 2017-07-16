@@ -37,6 +37,11 @@ h4 {
   font-size:22px;
 }
 
+h5 {
+  font-family: 'inherit', sans-serif;
+  font-size:14px;
+}
+
 .newPost {
   position: relative;
 }
@@ -95,14 +100,14 @@ h4 {
 
 
 .me {
-  width:175px;
-  height:175px;
-  border-color:black;
+  width:250px;
+  height:300px;
+  border-color:lightgrey;
   border-width:5px;
   border-style:solid;
-  border-radius:200px;
-  right:100px;
-  top:250px;
+
+  right:0px;
+  top:50px;
 }
 
 
