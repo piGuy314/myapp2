@@ -16,8 +16,9 @@
 <p id="notice"><%= notice %></p>
 
 <div class= "col-md-8">
-
+<% if user_signed_in? %>
 <%= link_to 'New Post', new_post_path, class: 'newPost btn btn-success' %>
+<% end %>
 <br>
 <br>
 <!-- commenting out for now
