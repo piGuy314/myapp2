@@ -11,4 +11,9 @@ class PagesController < ApplicationController
   def javascript
   end
 
+  def video
+  end
+
+
+
 end

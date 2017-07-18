@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'contact-us', to: 'contacts#new'
   get 'devmatch', to: 'pages#devmatch'
   get 'javascript', to: 'pages#javascript'
+  get 'video', to: 'pages#video'
 end
