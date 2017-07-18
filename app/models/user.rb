@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
          extend Devise::Models
 
-  belongs_to :plan
+  
 end
