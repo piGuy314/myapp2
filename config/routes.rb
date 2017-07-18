@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get 'devmatch', to: 'pages#devmatch'
   get 'javascript', to: 'pages#javascript'
   get 'video', to: 'pages#video'
+  get 'site', to: 'pages#site'
+  get 'longform', to: 'pages#longform'
 end

@@ -14,6 +14,11 @@ class PagesController < ApplicationController
   def video
   end
 
+  def site
+  end
+
+  def longform
+  end
 
 
 end
