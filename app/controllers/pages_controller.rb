@@ -20,5 +20,8 @@ class PagesController < ApplicationController
   def longform
   end
 
+  def java
+  end
+
 
 end

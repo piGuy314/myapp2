@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get 'video', to: 'pages#video'
   get 'site', to: 'pages#site'
   get 'longform', to: 'pages#longform'
+  get 'java', to: 'pages#java'
 end
