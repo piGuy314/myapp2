@@ -5,13 +5,87 @@
     <!--
       <img id=bourbon style= width:900px;  src="http://blogs-images.forbes.com/karlaalindahao/files/2015/02/pappy_crop-1152x648.jpg">
     -->
+<h3 class='text-center'>Login form with Authentication <br><br><i class="fa"></i></h3>
+<div class'col-md-6'>
+  <div class='well'>
+    <h3>
+      import javafx.application.Application;<br>
+      import javafx.geometry.Insets;<br>
+      import javafx.scene.Scene;<br>
+      import javafx.scene.control.Button;<br>
+      import javafx.scene.control.Label;<br>
+      import javafx.scene.control.TextField;<br>
+      import javafx.scene.layout.GridPane;<br>
+      import javafx.stage.Stage;<br><br><br>
 
-<h3 class='text-center'>A simple interest program. <br><br><i class="fa  fa-info-circle fa-2x"></i></h3>
+
+      public class MainClass extends Application {<br><br>
+
+      &nbsp  &nbsp  &nbsp public static void main(String args[]) {<br><br>
+
+      &nbsp  &nbsp  &nbsp launch(args);<br><br>
+
+
+      }<br><br>
+
+
+      @Override<br>
+      public void start(Stage primaryStage) throws Exception {<br>
+
+      &nbsp  &nbsp  &nbspGridPane gridPane = new GridPane();<br>
+      &nbsp  &nbsp  &nbsp gridPane.setPadding(new Insets(8,8,8,8));<br><br>
+
+      &nbsp  &nbsp  &nbsp  gridPane.setVgap(10);<br>
+      &nbsp  &nbsp  &nbsp  gridPane.setHgap(10);<br><br>
+
+      &nbsp  &nbsp  &nbsp  Label namelabel = new Label("Name");<br>
+      &nbsp  &nbsp  &nbsp  GridPane.setConstraints(namelabel,0,0);<br><br>
+
+      &nbsp  &nbsp  &nbsp  TextField nametext = new TextField("Enter name here");<br>
+      &nbsp  &nbsp  &nbsp  GridPane.setConstraints(nametext,1,0);<br><br>
+
+      &nbsp  &nbsp  &nbsp  Label passwordlabel= new Label("Password");<br>
+      &nbsp  &nbsp  &nbsp  GridPane.setConstraints(passwordlabel,0,1);<br><br>
+      &nbsp  &nbsp  &nbsp  GridPane.setConstraints(passwordtext,1,1);<br><br>
+
+      &nbsp  &nbsp  &nbsp  Button button= new Button("Login");<br>
+      &nbsp  &nbsp  &nbsp  button.setOnAction(e-> validate(passwordtext));<br>
+
+      &nbsp  &nbsp  &nbsp  gridPane.getChildren().addAll(namelabel,nametext,passwordlabel,passwordtext,button);<br><br>
+
+      &nbsp  &nbsp  &nbsp  Scene scene= new Scene(gridPane,200,200);<br><br>
+
+      &nbsp  &nbsp  &nbsp  primaryStage.setScene(scene);<br><br>
+
+      &nbsp  &nbsp  &nbsp  primaryStage.show();<br><br>
+
+      }<br><br>
+
+      private void validate(TextField password) {<br><br>
+
+      &nbsp  &nbsp  &nbsp  String newpassword= password.getText();<br><br>
+
+      &nbsp  &nbsp  &nbsp  if(newpassword.equals("Admin123")) {<br><br>
+
+      &nbsp  &nbsp  &nbsp  System.out.println("Valid user");<br><br>
+      }<br><br>
+
+      else { <br><br>
+      &nbsp  &nbsp  &nbsp  System.out.println("Not a valid user");<br><br>
+      &nbsp  &nbsp }<br>
+      &nbsp }<br>
+      }<br>
+
+</h3>
+</div>
+
+
+<h3 class='text-center'>A simple interest program. <br><br><i class="fa"></i></h3>
   <div class='container'>
     <div class'col-md-6'>
       <div class='well'>
         <h3>
-              public class myClass { <br><br>
+            public class myClass { <br><br>
 
             &nbsp  &nbsp  &nbsp  public static void main(String args[]) { <br><br>
 
@@ -36,39 +110,39 @@
             &nbsp  &nbsp  } <br><br>
               } <br>
 
-      </h3>
-    </div>
+    </h3>
+</div>
 
-    <h3 class='text-center'>Random number generator - Dice. <br><br><div class="modal fade"></div><i class="fa  fa-info-circle fa-2x"></i></h3>
-
-    <div class='container'>
-      <div class'col-md-6'>
-        <div class='well'>
-          <h3>
-
-          import java.util.Scanner; <br>
-          import java.util.Random; <br><br>
-
-          public class myclass { <br><br>
-
-              &nbsp  &nbsp  &nbsp public static void main(String args[]) { <br><br>
-
-                &nbsp &nbsp  &nbsp  &nbsp &nbsp  Random dice = new Random();
-                &nbsp &nbsp  &nbsp  &nbsp &nbsp  int number; <br><br>
-
-                &nbsp &nbsp  &nbsp  &nbsp &nbsp  for (int i=0;i<10;i++) { <br><br>
-
-                &nbsp &nbsp  &nbsp  &nbsp &nbsp      number = 1+dice.nextInt(6); <br>
-                &nbsp &nbsp  &nbsp  &nbsp &nbsp      System.out.println(number); <br><br>
-
-                &nbsp  &nbsp  &nbsp &nbsp } <br>
-              &nbsp  &nbsp } <br>
-          } <br>
+<h3 class='text-center'>Random number generator - Dice. <br><br><div class="modal fade"></div><i class="fa"></i></h3>
 
 
+<div class'col-md-6'>
+  <div class='well'>
+    <h3>
+      import java.util.Scanner; <br>
+      import java.util.Random; <br><br>
+
+      public class myclass { <br><br>
+
+          &nbsp  &nbsp  &nbsp public static void main(String args[]) { <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  Random dice = new Random();
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  int number; <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  for (int i=0;i<10;i++) { <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  number = 1+dice.nextInt(6); <br>
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  System.out.println(number); <br><br>
+
+            &nbsp  &nbsp  &nbsp &nbsp } <br>
+          &nbsp  &nbsp } <br>
+      } <br>
 
   </h3>
 </div>
+
+
+
 
 <br>
 <br>

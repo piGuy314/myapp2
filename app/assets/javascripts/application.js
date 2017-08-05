@@ -18,11 +18,6 @@
 
 
 
-$(document).ready(function() {
-    $(".btn").click(function() {
-        $('#modal-from-dom').modal()
-    })
-});
 
 
 function openNav() {
