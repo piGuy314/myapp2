@@ -6,6 +6,63 @@
     <!--
       <img id=bourbon style= width:900px;  src="http://blogs-images.forbes.com/karlaalindahao/files/2015/02/pappy_crop-1152x648.jpg">
     -->
+
+    <div class'col-md-6'>
+      <div class='well'>
+        <h3>
+
+Main.java File<br>
+package sample;<br><br>
+
+import javafx.application.Application;<br>
+import javafx.fxml.FXMLLoader;<br>
+import javafx.scene.Parent;<br>
+import javafx.scene.Scene;<br>
+import javafx.stage.Stage;<br><br>
+
+public class Main extends Application {<br><br>
+
+@Override<br>
+public void start(Stage primaryStage) throws Exception{<br>
+&nbsp  &nbsp  &nbsp Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));<br>
+&nbsp  &nbsp  &nbsp primaryStage.setTitle("Hello World");<br>
+&nbsp  &nbsp  &nbsp primaryStage.setScene(new Scene(root, 500, 500));<br>
+&nbsp  &nbsp  &nbsp primaryStage.show();<br>
+}<br><br><br>
+
+
+public static void main(String[] args) {<br>
+&nbsp  &nbsp  &nbsp launch(args);<br>
+&nbsp  }<br>
+}<br><br>
+
+Controller.java File<br>
+package sample;<br><br>
+
+import javafx.scene.control.TextArea;<br>
+import javafx.scene.control.TextField;<br><br>
+
+public class Controller {<br><br>
+
+&nbsp  &nbsp  &nbsp public TextField tname;<br>
+&nbsp  &nbsp  &nbsp public TextField tid;<br>
+&nbsp  &nbsp  &nbsp public TextField tmarks;<br>
+&nbsp  &nbsp  &nbsp public TextField tcontact;<br>
+
+&nbsp  &nbsp  &nbsp public TextArea texta;<br><br>
+
+&nbsp  &nbsp  &nbsp public void buttonclicked(){<br><br>
+
+&nbsp  &nbsp  &nbsp texta.setText(tname.getText()+"\n"+tid.getText()+"\n"+tmarks.getText()+"\n"+tcontact.getText());<br><br>
+
+&nbsp  &nbsp }<br>
+&nbsp  }<br>
+}<br>
+<img src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/20604554_106692083375289_5502102145832956416_n.jpg?oh=febe2ab45a6f33c6aa52cd23642f0374&oe=5A345B59"></img>
+</h3>
+</div>
+
+
 <h3 class='text-center'>Login form with Authentication.<br> Grid Pane layout using JavaFX imports. Console output show working authentication.<br><br><i class="fa"></i></h3>
 <div class'col-md-6'>
   <div class='well'>
