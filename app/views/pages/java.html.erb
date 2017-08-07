@@ -7,6 +7,99 @@
       <img id=bourbon style= width:900px;  src="http://blogs-images.forbes.com/karlaalindahao/files/2015/02/pappy_crop-1152x648.jpg">
     -->
 
+<h3 class='text-center'>Body Mass Index Calculator<br><br><i class="fa"></i></h3>
+<div class'col-md-6'>
+<div class='well'>
+<h3>
+Main.java file<br>
+package sample;<br><br>
+
+import javafx.application.Application;<br>
+import javafx.fxml.FXMLLoader;<br>
+import javafx.scene.Parent;<br>
+import javafx.scene.Scene;<br>
+import javafx.stage.Stage;<br><br>
+
+public class Main extends Application {<br><br>
+
+@Override<br>
+public void start(Stage primaryStage) throws Exception{<br>
+&nbsp  &nbsp  &nbsp Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));<br>
+&nbsp  &nbsp  &nbsp primaryStage.setTitle("Hello World");<br>
+&nbsp  &nbsp  &nbsp primaryStage.setScene(new Scene(root, 500, 500));<br>
+&nbsp  &nbsp  &nbsp primaryStage.show();<br>
+}<br><br><br>
+
+
+public static void main(String[] args) {<br>
+&nbsp  &nbsp  &nbsp launch(args);<br><br>
+&nbsp  }<br>
+}<br><br>
+
+&nbsp  &nbsp  &nbsp Controler.Java file<br>
+&nbsp  &nbsp  &nbsp package sample;<br><br>
+
+&nbsp  &nbsp  &nbsp import javafx.scene.control.Label;<br>
+&nbsp  &nbsp  &nbsp import javafx.scene.control.TextField;<br><br>
+
+&nbsp  &nbsp  &nbsp public class Controller {<br><br>
+
+&nbsp  &nbsp  &nbsp public TextField theight;<br>
+&nbsp  &nbsp  &nbsp public TextField tweight;<br><br><br><br>
+
+
+
+&nbsp  &nbsp  &nbsp public Label lbmi;<br>
+&nbsp  &nbsp  &nbsp public Label lresult;<br><br>
+
+
+&nbsp  &nbsp  &nbsp public void buttonclicked(){<br><br>
+
+&nbsp  &nbsp  &nbsp double height;<br>
+&nbsp  &nbsp  &nbsp double weight;<br>
+&nbsp  &nbsp  &nbsp double bmi;<br><br>
+
+&nbsp  &nbsp  &nbsp String result="";<br><br>
+
+&nbsp  &nbsp  &nbsp height= Double.parseDouble(theight.getText());<br>
+&nbsp  &nbsp  &nbsp weight= Double.parseDouble(tweight.getText());<br><br>
+
+
+&nbsp  &nbsp  &nbsp height = height*.025;<br>
+&nbsp  &nbsp  &nbsp weight = weight*.45;<br>
+&nbsp  &nbsp  &nbsp bmi= height*height;<br>
+&nbsp  &nbsp  &nbsp bmi= weight/bmi;<br><br>
+
+&nbsp  &nbsp  &nbsp lbmi.setText("BMI: "+bmi);<br>
+
+if(bmi<18.5){<br><br>
+
+&nbsp  &nbsp  &nbsp  result="Underweight";<br><br>
+
+} else if (bmi>18.5 && bmi<25){<br><br>
+
+&nbsp  &nbsp  &nbsp   result="normal";<br><br>
+
+} else if(bmi > 25){<br><br>
+
+&nbsp  &nbsp  &nbsp   result="Overweight :(";<br><br>
+
+}<br><br>
+
+
+lresult.setText("You are: "+result);<br><br>
+
+
+&nbsp  &nbsp  }<br>
+&nbsp }<br>
+} <br>
+<img src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/20638513_106737773370720_3859641161814848312_n.jpg?oh=ebd17c00c1cba65656660b4b9e5cbb0c&oe=5A2CB11D"></img>
+
+
+</h3>
+</div>
+
+<h3 class='text-center'>Student info system. <br><br><i class="fa"></i></h3>
     <div class'col-md-6'>
       <div class='well'>
         <h3>
