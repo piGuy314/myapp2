@@ -23,5 +23,8 @@ class PagesController < ApplicationController
   def java
   end
 
+  def javapage2
+  end
+
 
 end

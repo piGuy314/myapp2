@@ -1,0 +1,216 @@
+<h1 class="text-center"><b>Intellij IDEA Projects / code</b></h1>
+<h2 class="text-center"><b>*My goal is to eventually translate this Java code into JavaScript in order to display live output on this webpage.</b><h2>
+
+
+  <div class="container">
+
+<h3 class='text-center'>Student info system. <br><br><i class="fa"></i></h3>
+    <div class'col-md-6'>
+      <div class='well'>
+        <h3>
+
+Main.java File<br>
+package sample;<br><br>
+
+import javafx.application.Application;<br>
+import javafx.fxml.FXMLLoader;<br>
+import javafx.scene.Parent;<br>
+import javafx.scene.Scene;<br>
+import javafx.stage.Stage;<br><br>
+
+public class Main extends Application {<br><br>
+
+@Override<br>
+public void start(Stage primaryStage) throws Exception{<br>
+&nbsp  &nbsp  &nbsp Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));<br>
+&nbsp  &nbsp  &nbsp primaryStage.setTitle("Hello World");<br>
+&nbsp  &nbsp  &nbsp primaryStage.setScene(new Scene(root, 500, 500));<br>
+&nbsp  &nbsp  &nbsp primaryStage.show();<br>
+}<br><br><br>
+
+
+public static void main(String[] args) {<br>
+&nbsp  &nbsp  &nbsp launch(args);<br>
+&nbsp  }<br>
+}<br><br>
+
+Controller.java File<br>
+package sample;<br><br>
+
+import javafx.scene.control.TextArea;<br>
+import javafx.scene.control.TextField;<br><br>
+
+public class Controller {<br><br>
+
+&nbsp  &nbsp  &nbsp public TextField tname;<br>
+&nbsp  &nbsp  &nbsp public TextField tid;<br>
+&nbsp  &nbsp  &nbsp public TextField tmarks;<br>
+&nbsp  &nbsp  &nbsp public TextField tcontact;<br>
+
+&nbsp  &nbsp  &nbsp public TextArea texta;<br><br>
+
+&nbsp  &nbsp  &nbsp public void buttonclicked(){<br><br>
+
+&nbsp  &nbsp  &nbsp texta.setText(tname.getText()+"\n"+tid.getText()+"\n"+tmarks.getText()+"\n"+tcontact.getText());<br><br>
+
+&nbsp  &nbsp }<br>
+&nbsp  }<br>
+}<br>
+<img src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/20604554_106692083375289_5502102145832956416_n.jpg?oh=febe2ab45a6f33c6aa52cd23642f0374&oe=5A345B59"></img>
+</h3>
+</div>
+
+
+<h3 class='text-center'>Login form with Authentication.<br> Grid Pane layout using JavaFX imports. Console output show working authentication.<br><br><i class="fa"></i></h3>
+<div class'col-md-6'>
+  <div class='well'>
+    <h3>
+      import javafx.application.Application;<br>
+      import javafx.geometry.Insets;<br>
+      import javafx.scene.Scene;<br>
+      import javafx.scene.control.Button;<br>
+      import javafx.scene.control.Label;<br>
+      import javafx.scene.control.TextField;<br>
+      import javafx.scene.layout.GridPane;<br>
+      import javafx.stage.Stage;<br><br><br>
+
+
+      public class MainClass extends Application {<br><br>
+
+      &nbsp  &nbsp  &nbsp public static void main(String args[]) {<br><br>
+
+      &nbsp  &nbsp  &nbsp launch(args);<br><br>
+
+
+      }<br><br>
+
+
+      @Override<br>
+      public void start(Stage primaryStage) throws Exception {<br>
+
+      &nbsp  &nbsp  &nbspGridPane gridPane = new GridPane();<br>
+      &nbsp  &nbsp  &nbsp gridPane.setPadding(new Insets(8,8,8,8));<br><br>
+
+      &nbsp  &nbsp  &nbsp  gridPane.setVgap(10);<br>
+      &nbsp  &nbsp  &nbsp  gridPane.setHgap(10);<br><br>
+
+      &nbsp  &nbsp  &nbsp  Label namelabel = new Label("Name");<br>
+      &nbsp  &nbsp  &nbsp  GridPane.setConstraints(namelabel,0,0);<br><br>
+
+      &nbsp  &nbsp  &nbsp  TextField nametext = new TextField("Enter name here");<br>
+      &nbsp  &nbsp  &nbsp  GridPane.setConstraints(nametext,1,0);<br><br>
+
+      &nbsp  &nbsp  &nbsp  Label passwordlabel= new Label("Password");<br>
+      &nbsp  &nbsp  &nbsp  GridPane.setConstraints(passwordlabel,0,1);<br><br>
+      &nbsp  &nbsp  &nbsp  GridPane.setConstraints(passwordtext,1,1);<br><br>
+
+      &nbsp  &nbsp  &nbsp  Button button= new Button("Login");<br>
+      &nbsp  &nbsp  &nbsp  button.setOnAction(e-> validate(passwordtext));<br>
+
+      &nbsp  &nbsp  &nbsp  gridPane.getChildren().addAll(namelabel,nametext,passwordlabel,passwordtext,button);<br><br>
+
+      &nbsp  &nbsp  &nbsp  Scene scene= new Scene(gridPane,200,200);<br><br>
+
+      &nbsp  &nbsp  &nbsp  primaryStage.setScene(scene);<br><br>
+
+      &nbsp  &nbsp  &nbsp  primaryStage.show();<br><br>
+
+      }<br><br>
+
+      private void validate(TextField password) {<br><br>
+
+      &nbsp  &nbsp  &nbsp  String newpassword= password.getText();<br><br>
+
+      &nbsp  &nbsp  &nbsp  if(newpassword.equals("Admin123")) {<br><br>
+
+      &nbsp  &nbsp  &nbsp  System.out.println("Valid user");<br><br>
+      }<br><br>
+
+      else { <br><br>
+      &nbsp  &nbsp  &nbsp  System.out.println("Not a valid user");<br><br>
+      &nbsp  &nbsp }<br>
+      &nbsp }<br>
+      }<br>
+      <img src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/20526337_103388577038973_7925885762814727437_n.jpg?oh=4cb9b6b07872195d9154e844ad2c2063&oe=59F92156"></img>
+</h3>
+</div>
+
+
+<h3 class='text-center'>A simple interest program. <br><br><i class="fa"></i></h3>
+  <div class='container'>
+    <div class'col-md-6'>
+      <div class='well'>
+        <h3>
+            public class myClass { <br><br>
+
+            &nbsp  &nbsp  &nbsp  public static void main(String args[]) { <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp    double principal, years, rate, interest; <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp     Scanner sc= new Scanner(System.in); <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp     System.out.println("Enter principal amount"); <br>
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp     principal= sc.nextDouble(); <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp     System.out.println("Enter number of years"); <br>
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp     years= sc.nextDouble(); <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp     System.out.println("Enter interest rate"); <br>
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp     rate= sc.nextDouble(); <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp     interest=(principal*years*rate)/100; <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp     System.out.println("The interest will be : " +interest) <br><br>
+
+
+            &nbsp  &nbsp  } <br><br>
+              } <br>
+
+    </h3>
+</div>
+
+<h3 class='text-center'>Random number generator - Dice. <br><br><div class="modal fade"></div><i class="fa"></i></h3>
+
+
+<div class'col-md-6'>
+  <div class='well'>
+    <h3>
+      import java.util.Scanner; <br>
+      import java.util.Random; <br><br>
+
+      public class myclass { <br><br>
+
+          &nbsp  &nbsp  &nbsp public static void main(String args[]) { <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  Random dice = new Random();
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  int number; <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  for (int i=0;i<10;i++) { <br><br>
+
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  number = 1+dice.nextInt(6); <br>
+            &nbsp &nbsp  &nbsp  &nbsp &nbsp  System.out.println(number); <br><br>
+
+            &nbsp  &nbsp  &nbsp &nbsp } <br>
+          &nbsp  &nbsp } <br>
+      } <br>
+
+  </h3>
+</div>
+
+
+<div class="col-md-4">
+  <a href="java">Previous Page</a>
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

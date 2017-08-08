@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get 'site', to: 'pages#site'
   get 'longform', to: 'pages#longform'
   get 'java', to: 'pages#java'
+  get 'javapage2', to: 'pages#javapage2'
 end
