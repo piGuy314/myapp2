@@ -1,35 +1,19 @@
-<%= form_with(model: post, local: true) do |form| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
-
-      <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field form-group col-md-6">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title, class: 'form-control' %>
-  </div>
-<br>
-<br>
-<br>
-<br>
-  <div class="field form-group col-md-6">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :post_body, class: 'form-control' %>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <div class="actions form-group">
-    <%= form.submit %>
-  </div>
+<%= form_for @post do |f| %>
+	<% if @post.errors.any? %>
+		<div id="errors">
+			<h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
+			<ul>
+				<% @post.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+	<%= f.label :title %><br>
+	<%= f.text_field :title %><br>
+	<br>
+	<%= f.label :body %><br>
+	<%= f.text_field :body %><br>
+	<br>
+	<%= f.submit %>
 <% end %>
