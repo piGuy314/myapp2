@@ -17,7 +17,7 @@ class PagesController < ApplicationController
   def site
   end
 
-  def longform
+  def PacmanGame
   end
 
   def java

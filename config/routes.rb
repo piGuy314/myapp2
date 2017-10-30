@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'javascript', to: 'pages#javascript'
   get 'video', to: 'pages#video'
   get 'site', to: 'pages#site'
-  get 'longform', to: 'pages#longform'
+  get 'PacmanGame', to: 'pages#PacmanGame'
   get 'java', to: 'pages#java'
   get 'javapage2', to: 'pages#javapage2'
 end
