@@ -17,13 +17,16 @@ class PagesController < ApplicationController
   def site
   end
 
-  def PacmanGame
-  end
-
   def java
   end
 
   def javapage2
+  end
+
+  def PacmanGame
+  end
+
+  def Tetris
   end
 
 
