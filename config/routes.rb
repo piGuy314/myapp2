@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get 'javapage2', to: 'pages#javapage2'
   get 'PacmanGame', to: 'pages#PacmanGame'
   get 'Tetris', to: 'pages#Tetris'
+  get 'Loaders', to: 'pages#Loaders'
 end

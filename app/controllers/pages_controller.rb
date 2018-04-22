@@ -29,5 +29,7 @@ class PagesController < ApplicationController
   def Tetris
   end
 
+  def Loaders
+  end
 
 end
