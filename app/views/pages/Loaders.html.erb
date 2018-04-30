@@ -5,45 +5,51 @@
 
 <style>
 
-div#load_screen{
-  background: #000;
-  opacity: 1;
-  position: fixed;
-  z-index: 10;
-  top: 0px;
-  width: 100%;
-  height: 160px;
+.loader1 {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
 }
 
-div#loading {
-  color:#FFF;
-  width:120px;
-  height:24px;
-  margin: 100px auto;
+.loader2 {
+ border-top: 16px solid red;
+ border-right: 16px solid green;
+ border-bottom: 16px solid red;
+ border-left: 16px solid green;
+ border-radius: 25%;
+ width: 120px;
+ height: 120px;
+ animation:  2s spin linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 </style>
 
 
 <script>
-window.addEventListener("load", function(){
-  var load_screen = document.getElementById("load_screen");
-  document.body.removeChild(load_screen);
-});
+
 </script>
 
 
 </head>
   <body>
-    <div id = "load_screen"><div id= "loading">Loading Document...</div></div>
+
+  <h1 class="text-center">Different Page Loaders<h1>
+    <br>
+    <br>
+  <div class="loader1"></div>
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-    <h1>**Page in process** Will be adding web sites that I've used to learn / expand my
-      coding knowledge that are low or no cost.<h1>
+  <div class="loader2"></div>
 
   </body>
 
