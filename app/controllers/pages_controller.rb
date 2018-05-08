@@ -32,4 +32,7 @@ class PagesController < ApplicationController
   def Loaders
   end
 
+  def SuperMario
+  end
+
 end

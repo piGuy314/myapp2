@@ -1,5 +1,8 @@
 <html>
 <head>
+  <h1>Refresh page</h1>
+  <h1>Use direction arrows to control peices</h1>
+  <h1>Use "Q" and "W" to flip the peices</h1>
     <title>Tetris</title>
     <style>
       body {
@@ -12,13 +15,17 @@
       canvas {
         border: solid .2em #fff;
         height: 90vh;
+        margin-bottom: 150px;
       }
+
     </style>
 </head>
+<br>
 <body>
     <div id="score"></div>
     <canvas id="tetris" width="240" height="400" />
     <script src="tetris.js"></script>
+
 </body>
 </html>
 
@@ -275,4 +282,6 @@ playerReset();
 updateScore();
 update();
   </script>
+
+
 </body>

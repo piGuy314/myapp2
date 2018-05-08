@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   get 'PacmanGame', to: 'pages#PacmanGame'
   get 'Tetris', to: 'pages#Tetris'
   get 'Loaders', to: 'pages#Loaders'
+  get 'SuperMario', to: 'pages#SuperMario'
 end
