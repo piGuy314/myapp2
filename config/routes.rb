@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   get 'Tetris', to: 'pages#Tetris'
   get 'Loaders', to: 'pages#Loaders'
   get 'SuperMario', to: 'pages#SuperMario'
+  get 'Pong', to: 'pages#Pong'
 end

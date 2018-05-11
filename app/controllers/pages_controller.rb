@@ -35,4 +35,7 @@ class PagesController < ApplicationController
   def SuperMario
   end
 
+  def Pong
+  end
+
 end
