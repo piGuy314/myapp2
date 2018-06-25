@@ -38,4 +38,7 @@ class PagesController < ApplicationController
   def Pong
   end
 
+  def Reddit
+  end
+
 end

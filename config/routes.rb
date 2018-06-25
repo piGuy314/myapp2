@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :links
   devise_for :users
   root 'posts#index'
   resources :posts do
@@ -18,4 +19,5 @@ Rails.application.routes.draw do
   get 'Loaders', to: 'pages#Loaders'
   get 'SuperMario', to: 'pages#SuperMario'
   get 'Pong', to: 'pages#Pong'
+  get 'Reddit', to: 'pages#Reddit'
 end
