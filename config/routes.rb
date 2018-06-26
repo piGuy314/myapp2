@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   root 'posts#index'
   resources :posts do
     resources :comments
+
+    resources :links
+    root to: "links#index"
+
   end
   get 'about', to: 'pages#about'
   resources :contacts
@@ -18,4 +22,5 @@ Rails.application.routes.draw do
   get 'Loaders', to: 'pages#Loaders'
   get 'SuperMario', to: 'pages#SuperMario'
   get 'Pong', to: 'pages#Pong'
+  
 end
