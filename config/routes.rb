@@ -22,5 +22,5 @@ Rails.application.routes.draw do
   get 'Loaders', to: 'pages#Loaders'
   get 'SuperMario', to: 'pages#SuperMario'
   get 'Pong', to: 'pages#Pong'
-  
+  get 'Reddit', to: 'pages#Reddit'
 end

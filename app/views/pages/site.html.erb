@@ -2,6 +2,32 @@
 
 <br>
 <br>
+<%= form_with(model: question, local: true) do |form| %>
+  <% if question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+      <% question.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :question_name, autofocus: true %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<br>
+<br>
+<ul class="my-ui-list">
 <%= link_to "https://www.freecodecamp.org/", target: :_blank  do %>
   <h1>https://www.freecodecamp.org/</h1>
 <% end %>
@@ -35,6 +61,7 @@
 <%= link_to "https://www.udemy.com/courses/", target: :_blank  do %>
   <h1>https://www.udemy.com/courses/</h1>
 <% end %>
+<ul>
 <br>
 <br>
 <br>
