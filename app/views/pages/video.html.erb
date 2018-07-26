@@ -1,3 +1,51 @@
+<html>
+<head>
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-entity id="cubes" position="0 1.5 -3" scale="0.5 0.5 0.5">
+    <a-box position="-1 1 -1"></a-box>
+    <a-box position="-1 1 1"></a-box>
+    <a-box position="-1 -1 1"></a-box>
+    <a-box position="-1 -1 -1"></a-box>
+
+    <a-box position="0 1 -1"></a-box>
+    <a-box position="0 1 1"></a-box>
+    <a-box position="0 -1 1"></a-box>
+    <a-box position="0 -1 -1"></a-box>
+
+    <a-box position="-1 0 -1"></a-box>
+    <a-box position="-1 0 1"></a-box>
+    <a-box position="1 0 1"></a-box>
+    <a-box position="1 0 -1"></a-box>
+
+    <a-box position="1 1 0"></a-box>
+    <a-box position="1 -1 0"></a-box>
+    <a-box position="-1 -1 0"></a-box>
+    <a-box position="-1 1 0"></a-box>
+
+    <a-box position="0 0 0"></a-box>
+    <a-box position="0 0 -1"></a-box>
+    <a-box position="0 0 1"></a-box>
+    <a-box position="1 0 0"></a-box>
+    <a-box position="-1 0 0"></a-box>
+    <a-box position="0 1 0"></a-box>
+    <a-box position="0 -1 0"></a-box>
+
+    <a-box position="1 1 -1"></a-box>
+    <a-box position="1 -1 1"></a-box>
+    <a-box position="1 -1 -1"></a-box>
+    <a-box position="1 1 1"></a-box>
+      <a-animation attribute="rotation" from="45 0 0" to="215 360 0" easing="linear"  dur="10000" repeat="indefinite" direction="alternate"></a-animation>
+      <a-entity>
+   <a-sky color="#FCFCFC">
+     <a-animation attribute="color" from="#FCFCFC" to="#0C0C0C" easing="linear"  dur="10000" repeat="indefinite" direction="alternate"></a-animation>
+        </a-sky>
+  </a-scene>
+
+
+
 <h1>**Page in progress** Need to work on styling, adding more videos and categorizing</h1>
 <br>
 <br>
@@ -58,3 +106,26 @@
       </div>
     </div>
   </div>
+
+</body>
+</html>
+
+
+  <script>
+    var scene = document.querySelector('a-scene');
+    if (scene.hasLoaded) {
+      run();
+    } else {
+      scene.addEventListener('loaded', run);
+    }
+
+    function run() {
+      var entity = scene.querySelectorAll("a-box");
+      entity.forEach(function (box) {
+        var r = Math.floor(Math.random() * 255);
+        var g = Math.floor(Math.random() * 255);
+        var b = Math.floor(Math.random() * 255);
+        box.setAttribute("color", "rgb(" + r + "," + g + "," + b + ")");
+      });
+    }
+  </script>
